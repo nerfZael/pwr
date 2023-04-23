@@ -6,7 +6,7 @@
 // use polywrap_client::core::uri::Uri;
 
 fn main() {
-    println!("Version 0.1.6");
+    println!("Version 0.1.7");
 
     // let args: Vec<String> = env::args().collect();
 
