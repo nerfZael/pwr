@@ -69,10 +69,10 @@ main() {
     exit 0
   fi
 
-  PWRUP_REPO=${PWRUP_REPO-polywrap/pwr}
+  PWRUP_REPO=${PWRUP_REPO-nerfZael/pwr}
 
   # Install by downloading binaries
-  if [[ "$PWRUP_REPO" == "polywrap/pwr" && -z "$PWRUP_BRANCH" && -z "$PWRUP_COMMIT" ]]; then
+  if [[ "$PWRUP_REPO" == "nerfZael/pwr" && -z "$PWRUP_BRANCH" && -z "$PWRUP_COMMIT" ]]; then
     PWRUP_VERSION=${PWRUP_VERSION-nightly}
     PWRUP_TAG=$PWRUP_VERSION
 
@@ -131,7 +131,7 @@ main() {
     # Compute the URL of the release tarball in the pwr repository.
     RELEASE_URL="https://github.com/${PWRUP_REPO}/releases/download/${PWRUP_TAG}/"
     BIN_ARCHIVE_URL="${RELEASE_URL}pwr_${PWRUP_VERSION}_${PLATFORM}_${ARCHITECTURE}.$EXT"
-
+    say $BIN_ARCHIVE_URL
     # Download and extract the binaries archive
     say "downloading the latest pwr binary"
     if [ "$PLATFORM" = "win32" ]; then
@@ -270,7 +270,6 @@ download() {
 
 banner() {
   printf '
-
 ========================================================================
 
 ██████╗ ██╗    ██╗██████╗ 
@@ -281,7 +280,7 @@ banner() {
 ╚═╝      ╚══╝╚══╝ ╚═╝  ╚═╝
 
 ========================================================================
-Repo       : https://github.com/polywrap/pwr/
+Repository: https://github.com/polywrap/pwr/
 ========================================================================
 '
 }

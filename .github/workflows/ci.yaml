@@ -136,7 +136,7 @@ jobs:
                   SVM_TARGET_PLATFORM: ${{ matrix.job.svm_target_platform }}
               with:
                   command: build
-                  args: --release --bins --target ${{ matrix.job.target }} --manifest-path rust/pwr/Cargo.toml
+                  args: --release --bins --target ${{ matrix.job.target }} --manifest-path ./rust/pwr/Cargo.toml
 
             - name: Archive binaries
               id: artifacts

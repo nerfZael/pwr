@@ -6,7 +6,7 @@ echo Installing pwrup...
 PWR_DIR=${PWR_DIR-"$HOME/.pwr"}
 PWR_BIN_DIR="$PWR_DIR/bin"
 
-BIN_URL="https://raw.githubusercontent.com/polywrap/pwr/main/pwrup/pwrup"
+BIN_URL="https://raw.githubusercontent.com/nerfZael/pwr/main/pwrup/pwrup"
 BIN_PATH="$PWR_BIN_DIR/pwrup"
 
 # Create the .pwr bin directory and pwrup binary if it doesn't exist.
